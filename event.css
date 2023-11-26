@@ -1,0 +1,188 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: 031746d8;
+    padding: 10px;
+  }
+  
+  .panel a {
+    margin-left: 10px;
+    text-decoration: none;
+    color:#e0dabce3;
+  }
+
+header {
+    background-color: #233357d8;
+    padding: 10px;
+    color: #e0dabce3;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 28px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.event h1 {
+    font-size: 26px;
+    color: #e0dabce3;
+    margin: 0 auto;
+    padding:20px;
+    text-align: center;
+}
+.desc {
+    max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;}
+
+
+.slider {
+    /* position:absolute; */
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #e0dabce3;
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 300%;
+    background-color: #e0dabce3;
+    height: 300px;
+    clear: both;
+    position: relative;
+    transition: left 2s;
+}
+
+.slide {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#slide-1:target ~ .image-container {
+    left: 0;
+}
+
+#slide-2:target ~ .image-container {
+    left: -100%;
+}
+
+#slide-3:target ~ .image-container {
+    left: -200%;
+}
+
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f1efe5e3;
+    margin-right: 5px;
+}
+
+.images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.images iframe {
+    width: 500px; 
+    height: 300px; 
+    border:none;
+    margin:auto;
+}
+
+.description {
+    padding: 20px;
+    background-color: #233357d8;
+    color: #e0dabce3;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .event {
+        flex-direction: column; 
+    }
+
+    .team img {
+        margin-top: 10px;
+    }
+}
+#tables {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #e0dabce3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #233357d8;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.percentage {
+    text-align: center;
+    font-weight: bold;
+}
+
+br {
+    display: block;
+    margin-bottom: 10px;
+}
